@@ -1,5 +1,5 @@
 # A Visual Analytics Approach to Facilitate Proctoring of Online Exams
-This paper is conditionally accepted to CHI21.
+This paper is accepted to CHI21.
 
 ## How to use it?
 

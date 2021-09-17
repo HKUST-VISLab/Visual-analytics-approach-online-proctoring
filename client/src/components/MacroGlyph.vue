@@ -51,14 +51,14 @@
                     'headpose': 'h'
                 },
                 svg:{
-                    height: parseInt((document.getElementsByClassName('macro_card_body')[0].offsetWidth-30)/2),
-                    width_glyph: parseInt((document.getElementsByClassName('macro_card_body')[0].offsetWidth-30)/2),
-                    width_time: parseInt((document.getElementsByClassName('macro_card_body')[0].offsetWidth-30)/4),
-                    width_risk: parseInt((document.getElementsByClassName('macro_card_body')[0].offsetWidth-30)/4)
+                    height: parseInt((document.getElementsByClassName('macro_card_body')[0].offsetWidth-50)/2),
+                    width_glyph: parseInt((document.getElementsByClassName('macro_card_body')[0].offsetWidth-50)/2),
+                    width_time: parseInt((document.getElementsByClassName('macro_card_body')[0].offsetWidth-50)/4),
+                    width_risk: parseInt((document.getElementsByClassName('macro_card_body')[0].offsetWidth-50)/4)
                 },
                 radar: {
-                    height: parseInt((document.getElementsByClassName('macro_card_body')[0].offsetWidth-30)/2-30),
-                    width: parseInt((document.getElementsByClassName('macro_card_body')[0].offsetWidth-30)/2-30)
+                    height: parseInt((document.getElementsByClassName('macro_card_body')[0].offsetWidth-50)/2-30),
+                    width: parseInt((document.getElementsByClassName('macro_card_body')[0].offsetWidth-50)/2-30)
                 },
                 student_time_length: null,
                 selected: false
@@ -156,7 +156,10 @@
         },
         methods: {
             scale(value, key){
-                if ((value-this.overall_cheating_stat[key]['min'])/(this.overall_cheating_stat[key]['max']-this.overall_cheating_stat[key]['min'])<0){
+                if ((this.overall_cheating_stat[key]['max']-this.overall_cheating_stat[key]['min'])==0){
+                    return 0
+                }
+                else if ((value-this.overall_cheating_stat[key]['min'])/(this.overall_cheating_stat[key]['max']-this.overall_cheating_stat[key]['min'])<0){
                     console.log(value, key, this.student_id)
                     return 0
                 }

@@ -31,3 +31,18 @@ pymongo             |      3.11.0
 2. Please use Chrome to open the system
 3. To have best experience, please use MacBook Pro 16 and adjust the Zoom level of Chrome to 80%.
 4. Since it is a prototype, perhaps it is not perfect. We welcome any suggestions.
+5. If you find our code or paper is helpful to your research, please kindly cite our paper as below:
+
+```
+@inbook{li2021proctoring,
+author = {Li, Haotian and Xu, Min and Wang, Yong and Wei, Huan and Qu, Huamin},
+title = {A Visual Analytics Approach to Facilitate the Proctoring of Online Exams},
+year = {2021},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+booktitle = {Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems},
+articleno = {682},
+numpages = {17}
+}
+```
+
